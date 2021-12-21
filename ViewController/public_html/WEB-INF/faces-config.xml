@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="2.1" xmlns="http://java.sun.com/xml/ns/javaee">
+  <application>
+    <default-render-kit-id>oracle.adf.rich</default-render-kit-id>
+    <resource-bundle>
+            <base-name>com.techoffice.view.bundle.vcBundle</base-name>
+            <var>res</var>
+        </resource-bundle>
+        <locale-config>
+            <default-locale>ar</default-locale>
+            <supported-locale>ar</supported-locale>
+        </locale-config>
+        <message-bundle>com.techoffice.view.bundle.vcBundle</message-bundle>
+  </application>
+  <navigation-rule>
+    <from-view-id>/allRequests.jsf</from-view-id>
+    <navigation-case>
+      <from-outcome>preview</from-outcome>
+      <to-view-id>/requestPage.jsf</to-view-id>
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>addRequest</from-outcome>
+      <to-view-id>/requestPage.jsf</to-view-id>
+    </navigation-case>
+  </navigation-rule>
+  <navigation-rule>
+    <from-view-id>/requestPage.jsf</from-view-id>
+    <navigation-case>
+      <from-outcome>allRequests</from-outcome>
+      <to-view-id>/allRequests.jsf</to-view-id>
+    </navigation-case>
+  </navigation-rule>
+</faces-config>

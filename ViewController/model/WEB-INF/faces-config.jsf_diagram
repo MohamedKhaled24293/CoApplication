@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <Page
+      id="Page2">
+      <property
+         name="jspName">/requestPage.jsf</property>
+      <property
+         name="x">398.0</property>
+      <property
+         name="y">268.14355</property>
+      <property
+         name="wildcard">false</property>
+   </Page>
+   <Page
+      id="Page3">
+      <property
+         name="jspName">/allRequests.jsf</property>
+      <property
+         name="x">626.0</property>
+      <property
+         name="y">261.79297</property>
+      <property
+         name="wildcard">false</property>
+   </Page>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase4"
+      from="Page3"
+      to="Page2">
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="fromOutcome">preview</property>
+      <property
+         name="sdm:polyPoints">L50,584.8476,261.44238,439.15216,267.79297,R50</property>
+   </NavigationCase>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase5"
+      from="Page2"
+      to="Page3">
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="fromOutcome">allRequests</property>
+      <property
+         name="sdm:polyPoints">R58,439.30432,274.79297,585.0,268.44238,L58</property>
+   </NavigationCase>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase6"
+      from="Page3"
+      to="Page2">
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="fromOutcome">addRequest</property>
+      <property
+         name="sdm:polyPoints">L42,584.6954,254.44238,439.0,260.79297,R42</property>
+   </NavigationCase>
+</SDM>
